@@ -277,7 +277,8 @@
   .value .num { font-family: var(--serif); color: var(--red); font-size: 1.4rem; line-height: 1.2; }
   .members { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; margin-top: 56px; }
   .member { text-align: center; }
-  .member .avatar { width: 72px; height: 72px; margin: 0 auto 10px; border-radius: 50%; background: var(--teal-soft); border: 2px solid rgba(255,255,255,.15); display: grid; place-items: center; font-family: var(--serif); font-size: 1.4rem; color: var(--sky); }
+  .member .avatar { width: 112px; height: 112px; overflow: hidden; margin: 0 auto 10px; border-radius: 50%; background: var(--teal-soft); border: 2px solid rgba(255,255,255,.15); display: grid; place-items: center; font-family: var(--serif); font-size: 1.4rem; color: var(--sky); }
+  .member .avatar img { width: 100%; height: 100%; object-fit: cover; object-position: center 25%; }
   .member b { display: block; font-size: .95rem; }
   .member span { font-size: .85rem; color: #9DB5B8; }
   @media (max-width: 860px) {
@@ -782,13 +783,13 @@
         </div>
       </div>
 
-      <!-- TODO: replace with real names and roles -->
+      <!-- TODO: add roles -->
       <div class="members">
-        <div class="member"><div class="avatar">A</div><b>[Name]</b><span>[Role]</span></div>
-        <div class="member"><div class="avatar">B</div><b>[Name]</b><span>[Role]</span></div>
-        <div class="member"><div class="avatar">C</div><b>[Name]</b><span>[Role]</span></div>
-        <div class="member"><div class="avatar">D</div><b>[Name]</b><span>[Role]</span></div>
-        <div class="member"><div class="avatar">E</div><b>[Name]</b><span>[Role]</span></div>
+        <div class="member"><div class="avatar"><img src="images/team/abby.jpg" alt="Abby"></div><b>Abby</b></div>
+        <div class="member"><div class="avatar"><img src="images/team/janine.jpg" alt="Janine"></div><b>Janine</b></div>
+        <div class="member"><div class="avatar"><img src="images/team/fernanda.jpg" alt="Fernanda"></div><b>Fernanda</b></div>
+        <div class="member"><div class="avatar"><img src="images/team/alana.jpg" alt="Alana"></div><b>Alana</b></div>
+        <div class="member"><div class="avatar"><img src="images/team/ekaansh.jpg" alt="Ekaansh"></div><b>Ekaansh</b></div>
       </div>
     </div>
   </section>
