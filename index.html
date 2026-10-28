@@ -255,7 +255,9 @@
   .pricing { background: var(--paper); }
   .plans { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 48px; max-width: 880px; }
   .plan { background: var(--white); border: 1px solid var(--line); border-radius: 16px; padding: 36px; display: flex; flex-direction: column; position: relative; }
-  .plan.featured { border: 2px solid var(--teal); }
+  .plan.featured { border: 2px solid var(--red); box-shadow: 0 18px 40px rgba(226, 56, 43, .12); }
+  @media (min-width: 761px) { .plan.featured { transform: scale(1.04); } }
+  .plans-note { color: var(--muted); font-size: .95rem; margin-top: 28px; max-width: 880px; }
   .plan .badge { position: absolute; top: -13px; left: 36px; background: var(--red); color: var(--white); font-size: .75rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 4px 12px; border-radius: 999px; }
   .plan h3 { font-size: 1.4rem; }
   .plan .for { color: var(--muted); margin-top: 6px; }
@@ -741,13 +743,13 @@
 
       <div class="plans">
         <div class="plan">
-          <h3>Parcel Report</h3>
+          <h3>Single Report</h3>
           <p class="for">For a single deal</p>
-          <div class="price">$499 <span>/ report</span></div>
+          <div class="price">$299 <span>/ report</span></div>
           <ul>
-            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E2382B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>Approval likelihood, timeline, and cost range</li>
-            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E2382B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>Full risk flag breakdown</li>
-            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E2382B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>Downloadable underwriting memo</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E2382B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>One full parcel underwriting report</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E2382B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>Approval likelihood, timeline estimate, cost range, and risk flags</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E2382B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>Pay as you go, no subscription</li>
           </ul>
           <a class="btn btn-outline buy-link" href="#">Buy a report</a>
         </div>
@@ -755,15 +757,17 @@
           <span class="badge">Best value</span>
           <h3>Unlimited</h3>
           <p class="for">For teams screening many parcels</p>
-          <div class="price">$1,500 <span>/ month</span></div>
+          <div class="price">$1,000 <span>/ month</span></div>
           <ul>
             <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E2382B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>Unlimited parcel reports</li>
-            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E2382B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>Everything in Parcel Report</li>
-            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E2382B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>Pays for itself at four reports a month</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E2382B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>Full trends dashboard access</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E2382B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>Export reports to PDF</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E2382B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>Cancel anytime</li>
           </ul>
-          <a class="btn btn-red buy-link" href="#">Buy unlimited</a>
+          <a class="btn btn-red buy-link" href="#">Start unlimited</a>
         </div>
       </div>
+      <p class="plans-note">Most rezonings cost $10,000–$100,000+. Know whether yours is worth pursuing before you spend it.</p>
     </div>
   </section>
 
